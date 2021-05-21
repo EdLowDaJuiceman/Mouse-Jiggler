@@ -1,0 +1,20 @@
+import pyautogui
+import time
+
+#This will figure out the size of your monitor so you can change the locations the mouse travels to
+
+print(pyautogui.size())
+
+
+#This will make a square and loop it 3 times
+for x in range(3):
+	pyautogui.moveTo(800, 450)
+	#change the time value to make the delay between mouse moves longer
+	time.sleep(1)
+	pyautogui.moveTo(800, 650)
+	time.sleep(1)
+	pyautogui.moveTo(400, 650)
+	time.sleep(1)
+	pyautogui.moveTo(400, 450)
+	time.sleep(1)
+	pyautogui.moveTo(800, 450)
